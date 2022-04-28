@@ -32,7 +32,7 @@ public class ProductServices {
     }
 
     public Product showProductByName(String name){
-        return reository.getByName(name);
+        return reository.findByNAme(name);
     }
 
     public Product update(Product product){
