@@ -28,7 +28,7 @@ public class ProductServices {
     }
 
     public Product showProductById(int id){
-        return reository.getById(id);
+        return reository.findById(id).orElse(null);
     }
 
     public Product showProductByName(String name){
